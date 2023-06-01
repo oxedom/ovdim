@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:15.3-alpine3.18
+    environment:
+      POSTGRES_PASSWORD: development
+    ports:
+      - 5432:5432

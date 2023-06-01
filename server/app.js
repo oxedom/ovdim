@@ -1,8 +1,11 @@
 const express = require('express');
-const mysql = require('mysql');
+const pool = require('./db/index.js')
 
 
 const app = express();
+
+
+console.log(pool.query('SELECT 1'));
 
 app.get('/', (req, res) => {
   // Handle the root route
